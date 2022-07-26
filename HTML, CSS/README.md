@@ -89,5 +89,5 @@
 ```
 ### Практика (скриншоты)
 ![chrome_SaSRrez0Ka](https://user-images.githubusercontent.com/109949290/181020718-361a3aca-7948-4abb-9923-e7b1b211dabd.png)
-![chrome_6sdRA9xb04](https://user-images.githubusercontent.com/109949290/181020725-5234c475-7caa-42ba-a870-6e6e9d1d1e3f.png)
 ![chrome_rBLR8yvUE4](https://user-images.githubusercontent.com/109949290/181020736-6b0e8a5f-72d7-4ee3-9795-a97855db1b8a.png)
+![chrome_6sdRA9xb04](https://user-images.githubusercontent.com/109949290/181020725-5234c475-7caa-42ba-a870-6e6e9d1d1e3f.png)
