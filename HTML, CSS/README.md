@@ -73,3 +73,17 @@
     
 </body>
 ```
+### Конспект 7
+Разделение стайла и html на разные файлы происходят следующим образом: 
+- создать файл `style.css` , перенести свойства стилей (`<style>`) в файл .css. 
+-  в основном файле подключить файл `style.css` с помощью добавлеия строки `<link rel="stylesheet" href="style.css">`в head.
+Пример:
+```
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практика Пеппы 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+```
