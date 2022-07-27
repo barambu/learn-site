@@ -1,3 +1,10 @@
 body {
     background-color: #ffe2b0;
 }
+
+header {
+    text-align: center;
+}
+.logo {
+    width: 180px;
+}
