@@ -147,6 +147,49 @@ div {
 - Элемент не может двигать сам себя, эл-т может двигать его сосед.
 ### 12
 Псевдоклассы - используются для динамики страницы сайта с помощью двоеточия после селекторов.
+
 `a:hover` -  наведение на ссылку (мб не только на ссылку)
+
 `li:last-child` - чтобы убрать отступ у последнего эл-та li в ul (nav), обращаемся к нему таким образом и убираем правый внешний отступ.
+
 В webref.ru можно посмотреть, какие есть псевдоклассы.
+### 13
+![wmplayer_fRnYUCgYND](https://user-images.githubusercontent.com/109949290/181504200-58243f35-062e-4a74-9341-d691cc77e34b.png)
+- Чтобы сдвинуть верхний элемент на сайте (например, логотип), делаем верхний внутренний отступ в Body ("родитель") - `padding-top`/ нижний элемент - `padding-bottom`
+### 14
+![тег имг](https://user-images.githubusercontent.com/109949290/181514092-d55028ce-88ef-4b65-afd2-632a31df3c62.png)
+![тег бэкграунд](https://user-images.githubusercontent.com/109949290/181514114-f1608f31-c3f2-43c6-a631-ab396929a35d.png)
+![свойства бэкграунда](https://user-images.githubusercontent.com/109949290/181514136-3fe82fec-95a1-4d98-9690-d55934d525db.png)
+![сокращ позиций](https://user-images.githubusercontent.com/109949290/181514157-7819e87f-fbab-47e1-b280-43df1ac9208f.png)
+
+`../` - указывая путь для изображения, исп.это в скобочах, чтобы выйти из папки в общее поле
+
+Пример кода:
+
+```
+<main>
+            <section class="product-img">
+                
+            </section>
+            <section></section>
+            <section></section>
+        </main>
+```
+Добавление картинки фона через background:
+
+```
+.product-img {
+    height: 640px;
+    background-image: url(../img/product.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+```
+
+Или
+```
+.product-img {
+    height: 640px;
+    background: url(../img/product.jpeg) center/cover 
+}
+```

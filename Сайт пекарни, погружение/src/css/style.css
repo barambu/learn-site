@@ -37,3 +37,8 @@ a:hover {
 li:last-child {
     margin-right: 0px;
 }
+
+.product-img {
+    height: 640px;
+    background: url(../img/product.jpeg) center/cover 
+}
