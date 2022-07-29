@@ -240,3 +240,44 @@ div {
     background: linear-gradient(180deg, rgba(244, 213, 178, 0.8)0%, rgba(234, 156, 65, 0.8)100%);
 }
 ```
+### 19
+- `margin: 0 auto` - делает эл-т (блочный) автоматически по центру
+Пример создания блочного эл-та в опред.месте поверх фона:
+```
+<main>
+            <section class="product-img">
+                <div class="product-img__block">
+                <div class="product-img__border">
+    
+                </div>
+                </div>
+            </section>
+            <section></section>
+            <section></section>
+        </main>
+```
+
+```
+.product-img {
+    height: 640px;
+    background: url(../img/product.jpeg) center/cover no-repeat;
+    position: relative;
+}
+
+.product-img__block {
+    width: 420px;
+    height: 190px;
+    background: linear-gradient(180deg, rgba(244, 213, 178, 0.8)0%, rgba(234, 156, 65, 0.8)100%);
+    position: absolute;
+    top: 349px;
+    left: 730px;
+    padding-top: 15px;
+
+}
+.product-img__border {
+width: 390px;
+height: 160px;
+border: 1px solid black;
+margin: 0 auto;
+}
+```
