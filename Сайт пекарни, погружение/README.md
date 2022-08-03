@@ -388,3 +388,72 @@ hr {
 }
 ```
 - Чтобы сделать отступ снизу в последнем элементе, нужно обратиться к footer и задать высоту.
+### 28
+Roboto regular - 1-е слово явл. названием шрифта, 2-е слово явл. названием начертания шрифта.
+
+![wmplayer_BvvFSdgVkL](https://user-images.githubusercontent.com/109949290/182650417-45684c2e-5c28-4107-b8e5-6aaa514e37af.png)
+
+- normal = regular
+- при выборе шрифта в подсказках бывает неск.шрифтов через запятую - это значит, что если на компьютере посетителя нашего сайта не будет установлен нужный шрифт, то программа автоматически выберет другой из нами указанных шрифтов.
+- есть 2 вида шрифтов: с засечками (serif) и без них (sans-serif)
+
+![wmplayer_ASEtWfwbTP](https://user-images.githubusercontent.com/109949290/182651361-889fea3d-f1aa-4806-afce-fa49d28f7fca.png)
+
+- подобрать шрифты бесплатно можно на сайте `fonts.google.com` (они будут в формате .ttf). Есть ещё сайт - `webfonts.pro` (забиваем в поисковике нужный шрифт и вуаля).
+
+СПОСОБЫ ПОДКЛЮЧЕНИЯ ШРИФТОВ:
+
+- задавать каждому элементу шрифты вручную (из уже имеющихся на нащем компьютере), используя команды `font-family`(названия шрифтов),`font-weight` (толщина шрифта - начертание) 
+
+![wmplayer_5yQoSSrpH6](https://user-images.githubusercontent.com/109949290/182657942-d33ba14e-f13c-4732-a945-e38c39ef1d7a.png)
+
+- через `fonts.google.com`: зайти на сайт-выбрать нужные стили (нажать на плюик слева)-в правом верхнем углу открыть последний значок-скопировать код для link - вставить в наш файл html. Активировав их, прописывать также в каждом нужном элементе свой шрифт (код для css можно скопировать там же + добавить хар-ки начертания).
+
+![wmplayer_RvqoZtltHA](https://user-images.githubusercontent.com/109949290/182659751-7b2f4a23-e95d-49ba-aac2-cedec8763ee7.png)
+
+- скачать шрифты с сайта в виде документа (download all). Затем с помощью команды `@font-face` подключить эти шрифты в файле css. Через `font-family: 'название'` указываем название сайта (своё) - `scr:local(настоящее название)` - `src: url(../fonts/shrift.ttf)` прокладываем путь - указываем свойства для нужного эл-та чере название шрифта. Пример:
+```
+@font-face {
+    font-family: 'ROBOTO';
+    src:local('Roboto');
+    src: url(../fonts/Roboto-Regular.ttf);
+    
+}
+
+h1 {
+    font-family: 'ROBOTO';
+}
+```
+- скачать нескольrо форматов наших шрифтов с сайта `webfonts.pro` (eot, woff, ttf) -> скопировать код для css с сайта и вставить его ->подправить пути, указав папку (лучше писать вручную!!!, чтобы не стёрся текст) - в команду `font-family: 'название своё'` вписать своё название -> добавить команду `src:local('Roboto')`. Затем мы обращаемся к тегу html и прописываем ему команду со своим наз-ем шрифта -`font-family: 'название своё'`. Добавляя неск. шрифтов, можно указать разную высоту, и обращаясь к элементам указывать высоту шрифта, чтобы было понятно, какой именно нужен. Либо можно задать разные названия (свои) в фонт-фэмили и добавлять это свойство. Пример:
+```
+html {
+    font-family: 'Roboto!';   
+}
+
+@font-face {
+    font-family: 'Roboto!';
+    src: url('../fonts/RobotoCondensed-Regular.eot');
+    src: url('../fonts/RobotoCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/RobotoCondensed-Regular.woff') format('woff'),
+    url('../fonts/RobotoCondensed-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Roboto!';
+    src:local('Roboto');
+    src: url('../fonts/RobotoCondensed-Bold.eot');
+    src: url('../fonts/RobotoCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/RobotoCondensed-Bold.woff') format('woff'),
+    url('../fonts/RobotoCondensed-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    }
+
+    a {
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+```
