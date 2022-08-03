@@ -78,6 +78,10 @@ li:last-child {
     margin: 0;
 }
 
+.section-description {
+    margin-bottom: 20px;
+}
+
 .section-description__icons-box {
     text-align: center;
     margin-bottom: 20px;
@@ -97,14 +101,17 @@ li:last-child {
 .section-description__icons-box img:last-child {
     margin-right: 0px;
 }
+
 .section-description__title {
     font-size: 96px;
     margin: 0;
     text-align: center;
 }
+
 .section-description__span {
     color: rgb(185, 62, 62);
 }
+
 .section-description__text {
     font-size: 18px;
     margin: 0px;
@@ -112,4 +119,30 @@ li:last-child {
     width: 1000px;
     margin: 0 auto;
 
+}
+
+.section-map {
+    margin-bottom: 20px;
+}
+.section-map__title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 36px ;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #999999;
+    width: 1024px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+footer {
+    height: 80px;
 }
