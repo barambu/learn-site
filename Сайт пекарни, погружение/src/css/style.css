@@ -87,6 +87,11 @@ li:last-child {
     margin-right: 76px;
     width: 286px ;
     height: 286px;
+    border-radius: 50%;
+    border: 3px solid rgba(62, 69, 75, 0.144);
+    -webkit-box-shadow: 4px 4px 55px 0px rgba(34, 60, 80, 0.08);
+    -moz-box-shadow: 4px 4px 55px 0px rgba(34, 60, 80, 0.08);
+    box-shadow: 4px 4px 55px 0px rgba(34, 60, 80, 0.08);
 }
 
 .section-description__icons-box img:last-child {
@@ -106,4 +111,5 @@ li:last-child {
     text-align: center;
     width: 1000px;
     margin: 0 auto;
+
 }
